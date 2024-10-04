@@ -1,13 +1,14 @@
-## Projektbeskrivning
+# Interactive Quiz Application
 
-Denna uppgift handlar om att utveckla en interaktiv quizapplikation där användare kan testa sina kunskaper inom ett specifikt ämnesområde. Målet med denna uppgift är att tillämpa och förstärka dina kunskaper i webbutveckling, särskilt i användningen av JavaScript för att skapa dynamiska och interaktiva element på en webbplats.
+Welcome to my Interactive Quiz Application repository! This repository contains a project built with Vanilla JavaScript, HTML, and CSS. The purpose of this application is to test knowledge in a specific subject area while practicing JavaScript concepts and improving my programming skills.
 
-### Syfte
+🚀 **About**
+The Interactive Quiz Application is designed to help users challenge their knowledge through engaging quizzes. This project allows users to:
 
-Syftet med projektet är att:
-- **Förbättra Programmeringsfärdigheter**: Genom att skapa en fungerande applikation får du möjlighet att praktisera och förbättra dina färdigheter i JavaScript, HTML och CSS.
-- **Skapa Användarupplevelse**: Fokusera på att designa en användarvänlig och responsiv applikation som är lätt att navigera.
-- **Implementera Dynamisk Funktionalitet**: Använda JavaScript för att hantera interaktioner och dynamiskt innehåll, såsom att ladda frågor, registrera användarens svar och ge feedback.
-- **Förstå Frågehantering**: Utveckla en metod för att presentera frågor och samla in resultat på ett strukturerat sätt.
+- Test their knowledge in various subjects 📚
+- Practice JavaScript fundamentals by implementing interactive features 🛠️
+- Work with the DOM (Document Object Model) to dynamically update content 🌐
+- Learn basic HTML & CSS integration for a responsive design 🎨
+- Gain confidence in problem-solving and coding with JavaScript 💡
 
-Genom att slutföra denna uppgift kommer du att få en djupare förståelse för webbutveckling och hur man skapar interaktiva webbapplikationer. Dessutom kommer du att få erfarenhet av att arbeta med projekt i en programmeringsmiljö, vilket kan vara värdefullt för framtida studier och arbetsmöjligheter.
+Feel free to explore the code and contribute to the project!
