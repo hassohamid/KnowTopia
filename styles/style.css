@@ -12,7 +12,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  text-align: center;
 }
 
 .difficultyLevels {
@@ -29,7 +28,7 @@ body {
   box-shadow: 0 0 10px rgb(187, 187, 187);
   border: none;
   cursor: pointer;
-  border-radius: 30px 5px 30px;
+  border-radius: ;
   color: rgb(0, 0, 0);
   font-weight: bold;
   animation: fadeIn 1s;
@@ -40,6 +39,7 @@ h1 {
   font-weight: bold;
   text-shadow: 1px 1px 2px rgb(135, 135, 135);
   animation: fadeIn 1s;
+  text-align: center;
 }
 
 @keyframes fadeIn {
