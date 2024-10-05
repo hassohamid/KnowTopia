@@ -28,7 +28,7 @@ body {
   box-shadow: 0 0 10px rgb(54, 54, 54);
   border: none;
   cursor: pointer;
-  border-radius: 50px 0 50px;
+  border-radius: 10px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   animation: fadeIn 1s;
@@ -51,7 +51,7 @@ h1 {
   }
 }
 
-#casual {
+#beginner {
   background-color: hsl(127, 100%, 50%);
 }
 #pro {
@@ -62,22 +62,18 @@ h1 {
   background-color: hsl(0, 100%, 50%);
 }
 
-#casual:hover {
-  background-color: hsl(105, 100%, 50%);
+#beginner:hover {
+  background-color: hsl(105, 100%, 60%);
   box-shadow: 0 0 20px rgb(127, 127, 127);
-  transform: rotate(5deg);
-  transition: 0.4s;
 }
 
-#casual:active {
+#beginner:active {
   background-color: hsl(105, 100%, 40%);
 }
 
 #pro:hover {
   background-color: hsl(56, 100%, 50%);
   box-shadow: 0 0 20px rgb(127, 127, 127);
-  transform: rotate(5deg);
-  transition: 0.4s;
 }
 
 #pro:active {
@@ -85,30 +81,18 @@ h1 {
 }
 
 #god:hover {
-  background-color: hsl(0, 100%, 50%);
+  background-color: hsl(0, 100%, 60%);
   box-shadow: 0 0 20px rgb(107, 107, 107);
-  transform: rotate(5deg);
-  transition: 0.4s;
 }
 
 #god:active {
   background-color: hsl(0, 100%, 40%);
 }
 
-/* .icons {
-  display: none;
-  justify-content: space-around;
-  font-size: 2rem;
-  animation: fadeIn 1s;
-} */
-
-/* h2 {
-  border-bottom: 5px solid white;
-} */
-
 hr {
   margin-top: 20px;
   height: 4px;
+  width: 300px;
   background-image: linear-gradient(
     to right,
     rgb(0, 255, 0),
@@ -117,12 +101,4 @@ hr {
     rgb(255, 0, 0)
   );
   border: none;
-}
-
-h3 {
-  color: white;
-  letter-spacing: 15px;
-  margin-top: 20px;
-  font-weight: lighter;
-  font-size: 1rem;
 }
