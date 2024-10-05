@@ -21,14 +21,14 @@ body {
 }
 
 .difficultyLevels button {
-  margin: 15px;
+  margin: 10px;
   margin-top: 30px;
   padding: 10px 30px;
-  font-size: 15px;
-  box-shadow: 0 0 10px rgb(187, 187, 187);
+  font-size: 17px;
+  box-shadow: 0 0 10px rgb(54, 54, 54);
   border: none;
   cursor: pointer;
-  border-radius: ;
+  border-radius: 50px 0 50px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   animation: fadeIn 1s;
@@ -64,7 +64,9 @@ h1 {
 
 #casual:hover {
   background-color: hsl(105, 100%, 50%);
-  box-shadow: 0 0 20px white;
+  box-shadow: 0 0 20px rgb(127, 127, 127);
+  transform: rotate(5deg);
+  transition: 0.4s;
 }
 
 #casual:active {
@@ -73,7 +75,9 @@ h1 {
 
 #pro:hover {
   background-color: hsl(56, 100%, 50%);
-  box-shadow: 0 0 20px white;
+  box-shadow: 0 0 20px rgb(127, 127, 127);
+  transform: rotate(5deg);
+  transition: 0.4s;
 }
 
 #pro:active {
@@ -82,7 +86,9 @@ h1 {
 
 #god:hover {
   background-color: hsl(0, 100%, 50%);
-  box-shadow: 0 0 20px white;
+  box-shadow: 0 0 20px rgb(107, 107, 107);
+  transform: rotate(5deg);
+  transition: 0.4s;
 }
 
 #god:active {
