@@ -25,7 +25,7 @@
 
   h1 {
     color: white;
-    font-weight: 300;
+    font-weight: bold;
     animation: fadeIn 1s;
     text-shadow: 1px 1px 2px rgb(135, 135, 135);
     text-align: center;
