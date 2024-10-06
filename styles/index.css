@@ -21,14 +21,16 @@
     text-align: center;
   }
 
+  body {
+    background-color: black;
+    animation: fadeIn 1s;
+  }
   main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #000000;
     font-weight: bold;
-    animation: fadeIn 1s;
   }
 
   .container {
@@ -151,3 +153,23 @@ a span:nth-child(4) {
     bottom: 100%;
   }
 }
+
+/* header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-top: 50px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  cursor: pointer;
+} */
