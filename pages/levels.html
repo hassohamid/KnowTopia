@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="/scripts/script.js" defer></script>
-    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Choose Level</title>
+    <script src="/scripts/levels.js" defer></script>
+    <link rel="stylesheet" href="/styles/levels.css" />
   </head>
 
   <body>
-    <div class="difficultyLevels">
-      <h1>LEVELS</h1>
-      <hr />
-      <button id="beginner">Beginner</button>
-      <button id="pro">Pro</button>
-      <button id="god">God Tier</button>
-    </div>
+    <main>
+      <div class="difficultyLevels">
+        <h1>LEVELS</h1>
+        <hr />
+        <button onclick="beginner()" id="beginner">Beginner</button>
+        <button onclick="pro()" id="pro">Pro</button>
+        <button onclick="elite()" id="elite">Elite</button>
+      </div>
+    </main>
   </body>
 </html>

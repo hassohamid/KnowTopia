@@ -14,13 +14,21 @@
       opacity: 1;
     }
   }
-  body {
+
+  h2 {
+    color: white;
+    background-color: black;
+    text-align: center;
+  }
+
+  main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #050801;
+    background: #000000;
     font-weight: bold;
+    animation: fadeIn 1s;
   }
 
   .container {

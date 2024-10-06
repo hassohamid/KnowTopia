@@ -8,10 +8,23 @@
 
 body {
   background-color: black;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  animation: fadeIn 1s;
 }
 
 .difficultyLevels {
@@ -31,24 +44,13 @@ body {
   border-radius: 10px;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  animation: fadeIn 1s;
 }
 h1 {
   color: white;
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgb(135, 135, 135);
-  animation: fadeIn 1s;
   text-align: center;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 #beginner {
@@ -58,7 +60,7 @@ h1 {
   background-color: hsl(40, 100%, 50%);
 }
 
-#god {
+#elite {
   background-color: hsl(0, 100%, 50%);
 }
 
@@ -82,12 +84,12 @@ h1 {
   transform: scale(0.98);
 }
 
-#god:hover {
+#elite:hover {
   background-color: hsl(0, 100%, 60%);
   box-shadow: 0 0 20px rgb(107, 107, 107);
 }
 
-#god:active {
+#elite:active {
   background-color: hsl(0, 100%, 40%);
   transform: scale(0.98);
 }
