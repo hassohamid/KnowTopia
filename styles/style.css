@@ -69,6 +69,7 @@ h1 {
 
 #beginner:active {
   background-color: hsl(105, 100%, 40%);
+  transform: scale(0.98);
 }
 
 #pro:hover {
@@ -78,6 +79,7 @@ h1 {
 
 #pro:active {
   background-color: hsl(56, 100%, 40%);
+  transform: scale(0.98);
 }
 
 #god:hover {
@@ -87,6 +89,7 @@ h1 {
 
 #god:active {
   background-color: hsl(0, 100%, 40%);
+  transform: scale(0.98);
 }
 
 hr {
