@@ -1,3 +1,5 @@
+#KnowTopia™
+
 # Interactive Quiz Application
 
 Welcome to my Interactive Quiz Application repository! This repository contains a project built with Vanilla JavaScript, HTML, and CSS. The purpose of this application is to test knowledge in a specific subject area while practicing JavaScript concepts and improving my programming skills.
