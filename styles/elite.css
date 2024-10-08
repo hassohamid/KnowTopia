@@ -86,3 +86,40 @@ button:active {
   background-color: hsl(0, 100%, 80%);
   transform: scale(0.96);
 }
+
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#timerTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#question {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+}
+
+.quiz-container {
+  max-width: 350px;
+}
+
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.answers li {
+  background-color: white;
+}
