@@ -109,3 +109,13 @@ input {
 #saveScoreBtn {
   border: none;
 }
+
+#score {
+  color: rgb(50, 255, 67);
+  font-weight: bold;
+}
+
+#finalScore {
+  color: rgb(50, 255, 67);
+  font-weight: bold;
+}

@@ -1,0 +1,77 @@
+/* Anpassningar för skärmar med bredd på högst 876px */
+@media (max-width: 876px) {
+  #score {
+    font-size: 4rem;
+  }
+
+  .choice-container {
+    font-size: 1.8rem; /* Minska textstorleken för valen */
+    min-width: 30rem; /* Anpassa bredden för att passa mindre skärmar */
+    padding: 5px;
+  }
+
+  #progressBar {
+    width: 25rem; /* Gör progress baren mindre */
+  }
+
+  #hud {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .hud-item {
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Original är 3rem */
+  }
+}
+
+/* Anpassningar för skärmar med bredd på högst 495px */
+@media (max-width: 495px) {
+  body {
+    padding: 15px;
+  }
+
+  #finalScore {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 30px; /* Minska marginalerna */
+  }
+
+  .choice-container {
+    font-size: 1.3rem; /* Ännu mindre textstorlek för valen */
+    /* flex-direction: column; Lägg valen i en kolumn istället för en rad */
+    min-width: 100%; /* Gör valen 100% breda för att passa mobilskärmar */
+    padding: 15px; /* Minska inre marginaler */
+  }
+
+  #progressBar {
+    width: 100%; /* Progress bar ska ta upp hela bredden på mobilen */
+    height: 3rem; /* Minska höjden för att passa bättre */
+  }
+
+  .choice-prefix,
+  .choice-text {
+    padding: 5px; /* Mindre padding på texten i valen */
+  }
+
+  #hud {
+    flex-direction: column; /* Lägg HUD i en kolumn istället för en rad */
+    align-items: center; /* Centrera texten */
+    margin-bottom: 10px; /* Minska utrymmet mellan HUD och frågor */
+  }
+
+  .hud-item {
+    margin-bottom: 10px; /* Minska mellanrummen mellan HUD-elementen */
+  }
+
+  #progressBar {
+    margin-top: 10px; /* Lägg till lite extra marginal ovanför progress bar */
+  }
+}
