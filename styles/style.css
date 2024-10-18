@@ -11,26 +11,13 @@ body {
   background-color: black;
 }
 
-h1 {
-  font-size: 3rem;
-  color: white;
-  margin-bottom: 50px;
-  max-width: 40rem;
-  text-align: center;
-}
-
-#title {
-  font-size: 3rem;
-  color: white;
-  margin-bottom: 2rem;
-  border-bottom: solid 10px rgb(255, 0, 157);
-}
-
 .container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 420px;
+  margin: auto;
 }
 
 .flex-column {
@@ -43,17 +30,31 @@ h1 {
   align-items: center;
 }
 
+h1 {
+  font-size: 2.3rem;
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+  border-bottom: solid 10px rgb(255, 0, 157);
+}
+
 .hidden {
   display: none;
 }
 
 .btn {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 15px 20px;
   text-decoration: none;
   color: rgb(48, 48, 48);
   text-align: center;
-  width: 350px;
+  width: 300px;
   background-color: aqua;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -74,7 +75,7 @@ h1 {
 }
 
 #result-btn {
-  background-color: rgb(255, 234, 0);
+  background-color: rgb(255, 247, 0);
 }
 
 /* Sista sidan */
@@ -113,6 +114,8 @@ input {
 #score {
   color: rgb(50, 255, 67);
   font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 #finalScore {
