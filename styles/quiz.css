@@ -64,6 +64,8 @@ body {
 
 #progressText {
   margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: rgb(255, 221, 0);
 }
 
 #question {

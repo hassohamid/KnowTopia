@@ -112,13 +112,11 @@ input {
 }
 
 #score {
-  color: rgb(50, 255, 67);
-  font-weight: bold;
+  color: rgb(0, 255, 21);
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 #finalScore {
   color: rgb(50, 255, 67);
-  font-weight: bold;
 }
