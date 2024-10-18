@@ -1,56 +1,38 @@
-// Hämtar input-fältet där spelaren kan skriva sitt namn (ett textfält)
+// Hämtar relevanta element från DOM
 const username = document.querySelector("#username");
-
-// Hämtar knappen som används för att spara spelarens poäng
 const saveScoreBtn = document.querySelector("#saveScoreBtn");
-
-// Hämtar elementet som visar spelarens slutpoäng efter spelet
 const finalScore = document.querySelector("#finalScore");
 
-// Hämtar spelarens senaste poäng från webbläsarens lokala lagring (som sattes där efter spelet)
+// Hämtar den senaste poängen och sparade high scores från localStorage
 const mostRecentScore = localStorage.getItem("mostRecentScore");
-
-// Hämtar den sparade listan med tidigare high scores från localStorage, om den finns
-// Om det inte finns några sparade high scores ännu, sätts det till en tom array
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-// Visar den senaste poängen (från spelet) i HTML-elementet som visar slutpoängen
+// Visar den senaste poängen
 finalScore.innerText = mostRecentScore;
 
-// Lägger till en händelsehanterare för att lyssna när användaren skriver i namn-fältet
+// Aktiverar knappen för att spara när användaren skriver sitt namn
 username.addEventListener("keyup", () => {
-  // Knappar blir aktiva när det finns text i namn-fältet, annars inaktiva (disabled)
-  // Om textfältet är tomt, sätts knappen till disabled (inaktiv)
   saveScoreBtn.disabled = !username.value;
 });
 
-// Funktion som körs när spelaren klickar på "Spara"-knappen för att spara sin poäng
+// Sparar spelarens poäng och namn till high score-listan
 const saveHighScore = (e) => {
-  e.preventDefault(); // Hindrar sidan från att ladda om (vilket är standardbeteendet för formulär)
+  e.preventDefault();
 
-  // Skapar ett objekt som innehåller spelarens poäng och namn
   const scoreData = {
-    score: parseInt(mostRecentScore, 10), // Omvandlar poängen till ett heltal (eftersom poängen lagras som text)
-    name: username.value, // Hämtar spelarens namn från textfältet
+    score: parseInt(mostRecentScore, 10),
+    name: username.value,
   };
 
-  // Lägger till det nya poängobjektet i listan över high scores
+  // Lägger till och sorterar high scores, behåller topp 5
   highScores.push(scoreData);
-
-  // Sorterar high scores-listan i fallande ordning (högst poäng överst)
   highScores.sort((a, b) => b.score - a.score);
-
-  // Tar bort alla poäng som hamnar utanför topp 5, så vi bara sparar de fem högsta poängen
   highScores.splice(5);
 
-  // Sparar den uppdaterade high scores-listan i webbläsarens localStorage
-  // localStorage kan bara spara text, så vi måste göra om listan till en JSON-sträng
+  // Uppdaterar localStorage med den nya listan och navigerar till high score-sidan
   localStorage.setItem("highScores", JSON.stringify(highScores));
-
-  // Skickar spelaren till high score-sidan där den uppdaterade listan visas
   window.location.assign("/pages/highscores.html");
 };
 
-// Lägger till en händelsehanterare som lyssnar när spelaren klickar på "Spara"-knappen
-// När knappen klickas, körs funktionen saveHighScore
+// Lägger till klick-händelse på spara-knappen
 saveScoreBtn.addEventListener("click", saveHighScore);
