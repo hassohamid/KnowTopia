@@ -118,5 +118,7 @@ input {
 }
 
 #finalScore {
-  color: rgb(50, 255, 67);
+  color: rgb(255, 255, 255);
+  border-bottom: solid 10px rgb(255, 0, 157);
+  margin-bottom: 20px;
 }
